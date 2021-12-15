@@ -16,9 +16,10 @@ struct CardView: View {
             Image(image)
                 .resizable()
                 .scaledToFill()
-                .aspectRatio(0.695, contentMode: .fit)
-                .shadow(color: shadowColor, radius: 0.5, x: 0, y: 0.5)
+//                .frame(width: 150, height: 200)
+//                .cornerRadius(40)
                 .offset(y: -10)
+//                .padding()
             HStack{
                 Text(name)
                     .font(.title2)
@@ -30,7 +31,6 @@ struct CardView: View {
             .offset(y:-30)
         }
     }
-    private let shadowColor = Color(red: 0, green: 0, blue: 0, opacity: 0.2)
 }
 /*struct CardView_Previews: PreviewProvider {
     static var previews: some View {

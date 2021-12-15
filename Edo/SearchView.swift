@@ -24,11 +24,12 @@ struct SearchView: View {
         GridItem(.flexible(), spacing: 10),
     ]
     var body: some View {
-
         ScrollView{
             LazyVGrid(columns: columns, spacing: 10) {
                 ForEach(cardViewModel.cardsProducts) { card in
-                    ExtractedView(card: card)
+                    NavigationLink(destination:  ListModalView(card: card)){
+                        CardView(name: card.name, image: card.image)
+                    }
                 }
             }
             .padding()
@@ -56,20 +57,22 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct ExtractedView: View {
-    @EnvironmentObject var cardViewModel: CardViewModel
-    let card: Card
-    @State private var showModal = false
+//struct ExtractedView: View {
+//    @EnvironmentObject var cardViewModel: CardViewModel
+//    let card: Card
+//    @State private var showModal = false
 
     
-    var body: some View {
-        Button {
-            showModal.toggle()
-        } label: {
-            CardView(name: card.name, image: card.image)
-        }
-        .sheet(isPresented: $showModal, content: {
-            ListModalView(showModal: $showModal, card: card)
-        })
-    }
-}
+//    var body: some View {
+//        Button {
+//            showModal.toggle()
+//        } label: {
+//            NavigationLink(destination:  ListModalView(showModal: $showModal, card: card)){
+//                CardView(name: card.name, image: card.image)
+//            }
+//        }
+//        .sheet(isPresented: $showModal, content: {
+//            ListModalView(showModal: $showModal, card: card)
+//        })
+//    }
+//}

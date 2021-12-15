@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1D5165276A487F0013D76F /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D5164276A487F0013D76F /* FormView.swift */; };
 		9CBC13612763AAA800AEC409 /* EdoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC13602763AAA800AEC409 /* EdoApp.swift */; };
 		9CBC13632763AAA800AEC409 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC13622763AAA800AEC409 /* SearchView.swift */; };
 		9CBC13652763AAA800AEC409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBC13642763AAA800AEC409 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C1D5164276A487F0013D76F /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		9CBC135D2763AAA800AEC409 /* Edo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBC13602763AAA800AEC409 /* EdoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdoApp.swift; sourceTree = "<group>"; };
 		9CBC13622763AAA800AEC409 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				9CBC13622763AAA800AEC409 /* SearchView.swift */,
 				9CBC13972767EBF400AEC409 /* CardView.swift */,
 				9CBC139927680ABF00AEC409 /* ListModalView.swift */,
+				9C1D5164276A487F0013D76F /* FormView.swift */,
 				9CBC13942767A84700AEC409 /* Sottogruppo.swift */,
 				9CBC139027679B9700AEC409 /* Card.swift */,
 				9CBC139227679DE200AEC409 /* CardViewModel.swift */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1D5165276A487F0013D76F /* FormView.swift in Sources */,
 				9CBC13632763AAA800AEC409 /* SearchView.swift in Sources */,
 				9CBC13982767EBF400AEC409 /* CardView.swift in Sources */,
 				9CBC139127679B9700AEC409 /* Card.swift in Sources */,
