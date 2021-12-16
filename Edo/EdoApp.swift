@@ -22,7 +22,7 @@ struct EdoApp: App {
                         
                     }
                     .tabItem {
-                        Image(systemName: "magnifyingglass.circle")
+                        Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
                     NavigationView{

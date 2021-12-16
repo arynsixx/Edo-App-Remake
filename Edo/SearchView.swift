@@ -42,7 +42,7 @@ struct SearchView: View {
                     
                 } label: {
                     Image(systemName: "barcode.viewfinder")
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color("Black"))
                 }
             }
         }
